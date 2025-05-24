@@ -1,4 +1,3 @@
-Hello, World!
+## Hello There 😃
 
-This is a demo project for learning how to use Git.
-
+This would be my python notes for quick revision.
