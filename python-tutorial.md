@@ -204,6 +204,8 @@ I am in the file now
 
 `last5 = strin[-5:] # leaving blank after or before colon means everything after or before respectively`
 
+works even for list 
+
 ### Lambda function
 
 Anonymouse function
