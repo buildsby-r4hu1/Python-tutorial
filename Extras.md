@@ -15,6 +15,7 @@
     - [Using range() to make a list](#using-range-to-make-a-list)
     - [statistics with list of numbers](#statistics-with-list-of-numbers)
     - [Using get()](#using-get)
+    - [Default function parameters](#default-function-parameters)
 
 ### import this
 
@@ -126,3 +127,12 @@ if you're not sure if a key exists in dictionary, and want to access it's value 
 value = list.get('key','no value assigned')
 ```
 
+### Default function parameters
+
+```python
+def fucnt(par1, par2, par3='defult-value'):
+    #code
+
+funct(arg1,arg2) # if you want funct to use default value
+funct(arg1,arg2,arg3) # if you want funct to use your desired value
+```
