@@ -1,6 +1,7 @@
 # Python Tutorials
 
 ## Contents
+
 - [Python Tutorials](#python-tutorials)
   - [Contents](#contents)
     - [Printing](#printing)
@@ -24,17 +25,21 @@ print("Hello World")
 ```
 
 - `print` function adds a newline after printing on it's own.
-- To prevent that we give it a parameter, `end = ' ' `
+- To prevent that we give it a parameter, `end = ' '`
+
     ```
     print("hello",end=" ")
     print("World",end ='.')
     ```
 
     The output:
+
     ```
     >>>Hello World.
     ```
+
 - To type a multi-line string
+
     ```
     print(''' 
     Your 
@@ -94,7 +99,6 @@ rahul rahul rahul rahul ... rahul
 |index|0|1|2|3|4|
 |index|-1|-2|-3|-4|-5|
 
-
 >name[-1]=name[len(name)-1]=l
 
 ### Switch statement
@@ -110,6 +114,7 @@ rahul rahul rahul rahul ... rahul
         case_:
             code_default
     ```
+
 - Type 2
 
     ```
@@ -131,6 +136,7 @@ In the 3rd type, you can match list, dict, and other data types as well like cla
 ### Ternary Operator
 
 Not much needed, yet
+
 ```
 min = "both are equal" if a==b else "a is greater" if a>b else "b is greater"
 
@@ -144,6 +150,7 @@ print({True: "a is minimum", False: "b is minimum"} [a<b])
 ### Multiple return
 
 In order to return multiple items, we use commas in return statement
+
 ```
 def fun():
     #code
@@ -151,6 +158,7 @@ def fun():
 
 var1,var2,var3 = fun()
 ```
+
 ### random values
 
 ```
@@ -194,9 +202,7 @@ I am in the file now
 `string = 'The weather is nice today'`
 `weather = string[4:11] #The last index is not included`
 
-
-
-`last5 = strin[-5:] # leaving blank after or before colon means everything after or before respectively `
+`last5 = strin[-5:] # leaving blank after or before colon means everything after or before respectively`
 
 ### Lambda function
 
