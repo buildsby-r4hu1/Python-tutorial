@@ -1,5 +1,22 @@
 # Python Tutorials
 
+## Contents
+- [Python Tutorials](#python-tutorials)
+  - [Contents](#contents)
+    - [Printing](#printing)
+    - [Concatenation](#concatenation)
+    - [String Multiplication](#string-multiplication)
+    - [String indexing](#string-indexing)
+    - [Switch statement](#switch-statement)
+    - [Ternary Operator](#ternary-operator)
+    - [Multiple return](#multiple-return)
+    - [random values](#random-values)
+    - [Reading files](#reading-files)
+    - [Writing files](#writing-files)
+    - [String slicing](#string-slicing)
+    - [Lambda function](#lambda-function)
+    - [f string for precision](#f-string-for-precision)
+
 ### Printing
 
 ```
@@ -134,4 +151,73 @@ def fun():
 
 var1,var2,var3 = fun()
 ```
+### random values
 
+```
+import random
+random.randint(a,b) #returns random integer in [a,b]
+random.uniform(a,b) #return random float in [a,b]
+```
+
+### Reading files
+
+`var = open('file_path','r')`
+
+- Two arguments
+- first is the file path, or the file name if exists in same directroy
+- second is open mode, 'r' for read, 'w' for write, and 'a' for append
+  
+`content = var.read()`
+
+- contents or file is saved in content
+- You could also use `readline()` method to read line by line
+
+### Writing files
+
+```
+file = open('file.txt', 'w')
+# 'w' or 'a' according to need
+file.write('put me in the file!')
+file.write('\nI am in the file now')
+
+# very important to close the file
+file.close()
+```
+
+Contents of file now :
+
+put me in the file
+I am in the file now
+
+### String slicing
+
+`string = 'The weather is nice today'`
+`weather = string[4:11] #The last index is not included`
+
+
+
+`last5 = strin[-5:] # leaving blank after or before colon means everything after or before respectively `
+
+### Lambda function
+
+Anonymouse function
+
+Syntax
+
+`(lambda parameter:return_value)(argument)`
+
+e.g. `(lambda yr:2025-yr)(2006)`
+
+it returns your age
+
+They're mostly used to make function factories
+
+### f string for precision
+
+`print(f'The value of pi is {PI:{1}.{5}}')`
+
+{Value-to-print : {min-width}.{precision}}
+
+>The valus of pi is 3.1416
+
+<!--More will be added soon-->
