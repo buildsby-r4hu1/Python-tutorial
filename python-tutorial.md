@@ -20,27 +20,27 @@
 
 ### Printing
 
-```
+``` python
 print("Hello World")
 ```
 
 - `print` function adds a newline after printing on it's own.
 - To prevent that we give it a parameter, `end = ' '`
 
-    ```
+    ```python
     print("hello",end=" ")
     print("World",end ='.')
     ```
 
     The output:
 
-    ```
+    ```python
     >>>Hello World.
     ```
 
 - To type a multi-line string
 
-    ```
+    ```python
     print(''' 
     Your 
     Multi-line
@@ -50,7 +50,7 @@ print("Hello World")
 
     The output
 
-    ```
+    ```python
     Your 
     Multi-line
     String
@@ -58,7 +58,7 @@ print("Hello World")
 
 ### Concatenation
 
-```
+```python
 one = "one"
 two = "two"
 
@@ -68,7 +68,7 @@ print(one + two)
 
 The output:
 
-```
+```python
 one two
 onetwo
 ```
@@ -79,14 +79,14 @@ The comma adds a space, but not in concatenation
 
 You can make a string a number of time, by multiplying it by that *integer*.
 
-```
+```python
 10rahul = "rahul " * 10
 print(10rahul)
 ```
 
 The output:
 
-```
+```python
 rahul rahul rahul rahul ... rahul
 ```
 
@@ -105,7 +105,7 @@ rahul rahul rahul rahul ... rahul
 
 - Type 1
 
-    ```
+    ```python
     match argument:
         case arg1:
             code1
@@ -117,7 +117,7 @@ rahul rahul rahul rahul ... rahul
 
 - Type 2
 
-    ```
+    ```python
     match num:
         case 1 | 2:
             print('one or two')
@@ -125,7 +125,7 @@ rahul rahul rahul rahul ... rahul
 
 - Type 3
 
-    ```
+    ```python
     match num:
         case num if num>0:
             print('positive')
@@ -137,7 +137,7 @@ In the 3rd type, you can match list, dict, and other data types as well like cla
 
 Not much needed, yet
 
-```
+```python
 min = "both are equal" if a==b else "a is greater" if a>b else "b is greater"
 
 print("b is greater")[b>a]
@@ -151,7 +151,7 @@ print({True: "a is minimum", False: "b is minimum"} [a<b])
 
 In order to return multiple items, we use commas in return statement
 
-```
+```python
 def fun():
     #code
     return a,b,c
@@ -161,7 +161,7 @@ var1,var2,var3 = fun()
 
 ### random values
 
-```
+```python
 import random
 random.randint(a,b) #returns random integer in [a,b]
 random.uniform(a,b) #return random float in [a,b]
@@ -182,7 +182,7 @@ random.uniform(a,b) #return random float in [a,b]
 
 ### Writing files
 
-```
+```python
 file = open('file.txt', 'w')
 # 'w' or 'a' according to need
 file.write('put me in the file!')
@@ -204,7 +204,7 @@ I am in the file now
 
 `last5 = strin[-5:] # leaving blank after or before colon means everything after or before respectively`
 
-works even for list 
+works even for list
 
 ### Lambda function
 
