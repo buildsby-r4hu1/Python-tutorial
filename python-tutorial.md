@@ -80,8 +80,8 @@ The comma adds a space, but not in concatenation
 You can make a string a number of time, by multiplying it by that *integer*.
 
 ```python
-10rahul = "rahul " * 10
-print(10rahul)
+tenrahul = "rahul " * 10
+print(tenrahul)
 ```
 
 The output:
