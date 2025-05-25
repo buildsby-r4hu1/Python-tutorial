@@ -39,7 +39,7 @@ For both sides use `string.strip()`
 `string.removeprefix('prefix')` removes prefix from the string, if that prefix is at the start of string
 e.g.
 
-```
+```python
 url = 'https://github.com'
 url = url.removeprefix('https://')
 print(url)
@@ -57,7 +57,7 @@ The output is `github.com`, and prefix is removed
 
 For insetion we use `insert(index, 'item')` method
 
-```
+```python
 names = ['Rahul', 'Rohan', 'Rishi']
 names.inert(1,'Ravi')
 print(names)
@@ -73,30 +73,30 @@ print(names)
 
 Another way is using `del`
 
-```
+```python
 del names[1]
 ```
 
 Removing using the name using `remove('item')` method
 
-```
+```python
 names.remove('Rohan')
 ```
 
 ### List sorting
 
-**Alphabetical sort**
+It's only __Alphabetical sort__
 
 Permanent Sort
 
-```
+```python
 list.sort()
 list.sort(reverse = True)
 ```
 
 Temporary sorted list
 
-```
+```python
 sorted(list)
 sorted(list).reverse()
 ```
@@ -111,7 +111,7 @@ or
 
 ### statistics with list of numbers
 
-```
+```python
 nums=[1,23,234,53,0]
 min(nums) # 0
 max(nums) # 234
@@ -122,7 +122,7 @@ sum(nums) # 311
 
 if you're not sure if a key exists in dictionary, and want to access it's value if it exists, or show another value if doesn't exists, we could use get()
 
-```
+```python
 value = list.get('key','no value assigned')
 ```
 
