@@ -15,6 +15,10 @@
     - [Using range() to make a list](#using-range-to-make-a-list)
     - [statistics with list of numbers](#statistics-with-list-of-numbers)
     - [Using get()](#using-get)
+    - [Default function parameters](#default-function-parameters)
+    - [Classes](#classes)
+    - [Inheriting class](#inheriting-class)
+    - [try-except](#try-except)
 
 ### import this
 
@@ -49,7 +53,7 @@ The output is `github.com`, and prefix is removed
 
 ### Big numbers
 
-`num = 10_000_000`, the interpreter will ignore these *underscores*, but you can use them in place of spaces
+`num = 10_000_000`, the interpreter will ignore these _underscores_, but you can use them in place of spaces
 
 ### Inerting elements in list
 
@@ -63,7 +67,7 @@ names.inert(1,'Ravi')
 print(names)
 ```
 
->['Rahul','Ravi','Rohan','Rishi']
+> ['Rahul','Ravi','Rohan','Rishi']
 
 ### deleting elements from list
 
@@ -85,7 +89,7 @@ names.remove('Rohan')
 
 ### List sorting
 
-It's only __Alphabetical sort__
+It's only **Alphabetical sort**
 
 Permanent Sort
 
@@ -126,3 +130,65 @@ if you're not sure if a key exists in dictionary, and want to access it's value 
 value = list.get('key','no value assigned')
 ```
 
+### Default function parameters
+
+```python
+def fucnt(par1, par2, par3='defult-value'):
+    #code
+
+funct(arg1,arg2) # if you want funct to use default value
+funct(arg1,arg2,arg3) # if you want funct to use your desired value
+```
+
+### Classes
+
+```python
+class Cat:
+
+  def __init__(self,name,color):
+    self.name = name
+    self.color = age
+
+  def meow(self):
+    print('meow')
+
+  def isDumb(self):
+    print('yes') if self.color == 'orange' else print('no')
+
+billi = Cat('billie'.title(), orange)
+print(f'{billi.name} is of color {billi.color}')
+billi.meow()
+```
+
+To modify attributes, just use `billi.name = 'billi'`
+
+### Inheriting class
+
+```python
+class BigCat(Cat):
+  def __init__(self,name,color,val1):
+    super().__init__(name,color)
+    self.value = val1
+
+  def bigcat-function(self):
+    # This function is exclusive to bigCat members only
+
+  def meow(self):
+    print('roar')
+  # Overwriting cats methods
+```
+
+### try-except 
+
+```python
+try:
+  #code
+except type-of-error:
+  #code
+except type-of-error-2:
+  #code
+except:
+  #for any error which does fall in above
+else:
+  #code if no exception only
+```
