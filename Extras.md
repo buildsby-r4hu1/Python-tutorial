@@ -105,6 +105,12 @@ sorted(list)
 sorted(list).reverse()
 ```
 
+For sorting using key, we write a lambda function whose argument will be elemnts of list, and sorted based on it's return value.
+
+```python
+list.sort(key = lambda parameter : return, reverse = True)
+```
+
 ### Using range() to make a list
 
 `even-numbers = list(range(2,11,2))`
