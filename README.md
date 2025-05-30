@@ -1,5 +1,7 @@
 ## Hello There 😃
 
-This would be my python notes for quick revision.
+This repo was created for practicing git.
 
-Obviously, it's doesn't include stuff I would remember, but the ones that i usually forget and wish to revise.
+This includes my python notes for quick revision.
+
+This doesn't include a lot of stuff, and therefore probably not a good material for some python newbie.
